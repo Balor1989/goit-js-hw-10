@@ -6,6 +6,9 @@
          <h2>Название страны: {{0.name.common}}</h2>
          <p>Столица: {{0.capital}}</p>
          <p>Населенеие: {{0.population}}</p>
-         <p>Языки {{0.languages}}</p>
+         <p>Языки:<ul>
+             {{#each 0.languages}} <li>{{this}}</li> {{/each}}
+             </ul>
+         </p>
     </div>
 </div>
