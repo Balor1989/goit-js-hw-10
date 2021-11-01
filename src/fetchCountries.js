@@ -1,5 +1,5 @@
 import countryCardTpl from "./templates/country.hbs"
-import { debounce } from "lodash.debounce"
+import debounce from "lodash.debounce"
 
 const refs = {
 inputCountry: document.querySelector('[id = search-box]'), 
@@ -10,7 +10,7 @@ const onInputValue = (e) => {
   let x = ''
     x = e.target.value
     console.log(x)
-  fetch(`https://restcountries.com/v3.1/name/${x}?fields=name,capital,population,flags,languages`)
+  fetch(`https://restcountries.com/v3.1/name/${x.trim()}?fields=name,capital,population,flags,languages`)
   .then(response => {
       return response.json()
     })
@@ -21,8 +21,16 @@ const onInputValue = (e) => {
     .catch(error => {
       return error
     });
+
 }
-refs.inputCountry.addEventListener('input', debounce(onInputValue, 300))
+
+
+
+
+refs.inputCountry.addEventListener('input', debounce(onInputValue, 500))
+
+
+console.log(refs.inputCountry.currentTarget)
 
 
  
