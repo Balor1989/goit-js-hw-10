@@ -12,8 +12,9 @@ body {
   line-height: 1.5;
 
   background-image: url('../img/globe-g7a7565587_1920.jpg');
+  background-size: cover;
 }
-ul{
+ul {
   list-style: none;
   padding-left: 0;
 }
@@ -28,36 +29,36 @@ ul{
   overflow: hidden;
   padding-left: 0;
 }
-.country-card__language, 
-.country-card__description{
+.country-card__language,
+.country-card__description {
   display: inline-block;
 }
 
-.country-card__language:not(:last-child)::after{
-  content:",";
+.country-card__language:not(:last-child)::after {
+  content: ',';
 }
 .country-name {
-margin-left: 10px;
-font-weight: 700;
+  margin-left: 10px;
+  font-weight: 700;
 }
-.countries-list{
+.countries-list {
   display: flex;
 }
-.countries-list:not(:last-child){
+.countries-list:not(:last-child) {
   margin-bottom: 20px;
 }
-.country-card__img{
+.country-card__img {
   display: flex;
 }
-.country-card__name{
+.country-card__name {
   margin-left: 10px;
   font-size: 25px;
   font-weight: 700;
 }
 p,
-.country-card__description{
+.country-card__description {
   font-weight: 700;
 }
-span{
+span {
   font-weight: 400;
 }
