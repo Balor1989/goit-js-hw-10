@@ -10,6 +10,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  background-image: url('../img/globe-g7a7565587_1920.jpg');
 }
 ul{
   list-style: none;
