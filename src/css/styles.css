@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
 
   background-image: url('../img/globe-g7a7565587_1920.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 ul {
