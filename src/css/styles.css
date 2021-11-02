@@ -44,6 +44,14 @@ font-weight: 700;
 .countries-list:not(:last-child){
   margin-bottom: 20px;
 }
+.country-card__img{
+  display: flex;
+}
+.country-card__name{
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
 p,
 .country-card__description{
   font-weight: 700;
