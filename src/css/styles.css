@@ -11,7 +11,10 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+ul{
+  list-style: none;
+  padding-left: 0;
+}
 #search-box {
   font: inherit;
   padding: 8px;
@@ -19,9 +22,32 @@ body {
   margin-bottom: 16px;
 }
 
-.country-info.is-hidden {
-  opacity: 0;
+.country-card__languages {
+  overflow: hidden;
+  padding-left: 0;
 }
-ul {
-  list-style: none;
+.country-card__language, 
+.country-card__description{
+  display: inline-block;
+}
+
+.country-card__language:not(:last-child)::after{
+  content:",";
+}
+.country-name {
+margin-left: 10px;
+font-weight: 700;
+}
+.countries-list{
+  display: flex;
+}
+.countries-list:not(:last-child){
+  margin-bottom: 20px;
+}
+p,
+.country-card__description{
+  font-weight: 700;
+}
+span{
+  font-weight: 400;
 }

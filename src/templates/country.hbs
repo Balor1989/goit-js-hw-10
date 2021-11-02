@@ -5,11 +5,12 @@
         <img src="{{0.flags.svg}}" alt="{{0.name.common}}" width="50px">
     </div>
     <div class="country-card__body">
-         <h2>Название страны: {{0.name.common}}</h2>
-         <p>Столица: {{0.capital}}</p>
-         <p>Населенеие: {{0.population}}</p>
-         <p>Языки:<ul>
-             {{#each 0.languages}} <li>{{this}}</li> {{/each}}
+         <h2>Name: {{0.name.common}}</h2>
+         <p>Capital: <span>{{0.capital}}</span></p>
+         <p>Populations: <span>{{0.population}}</span></p>
+         <ul class="country-card__languages">
+             <li class="country-card__description">Languages: </li>
+             {{#each 0.languages}} <li class="country-card__language">{{this}}</li> {{/each}}
              </ul>
          </p>
     </div>
